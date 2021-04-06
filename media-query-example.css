@@ -8,12 +8,22 @@ main {
 main > div {
   padding: .5em;
   border: 1px solid black;
-  width: 32%;
+  width: 100%;
   box-sizing: border-box;
 }
 
 /* TODO 768px+ (2 columns, background: red) */
-
-
+@media screen and (min-width: 768px) {
+  main > div {
+    width: 48%;
+    background-color: red;
+  }
+}
 
 /* TODO 992px+ (3 columns, background: blue) */
+@media screen and (min-width: 992px) {
+  main > div {
+    width: 32%;
+    background-color: blue;
+  }
+}
