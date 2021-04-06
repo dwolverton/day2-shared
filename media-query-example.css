@@ -1,0 +1,19 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* TODO Mobile stiles... one column (right now it's 3) */
+main > div {
+  padding: .5em;
+  border: 1px solid black;
+  width: 32%;
+  box-sizing: border-box;
+}
+
+/* TODO 768px+ (2 columns, background: red) */
+
+
+
+/* TODO 992px+ (3 columns, background: blue) */
