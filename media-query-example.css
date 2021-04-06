@@ -4,16 +4,35 @@ main {
   justify-content: space-between;
 }
 
-/* TODO Mobile stiles... one column (right now it's 3) */
+/* Mobile stiles... one column (right now it's 3) */
 main > div {
   padding: .5em;
   border: 1px solid black;
-  width: 32%;
+  width: 100%;
   box-sizing: border-box;
 }
 
-/* TODO 768px+ (2 columns, background: red) */
+/* 768px+ (2 columns, background: red) */
+@media screen and (min-width: 768px) {
+  body {
+    background-color: silver;
+  }
 
+  /* Only rewrite the properties that need to change */
+  main > div {
+    width: 49%; /* 2 columns */
+    background-color: lightcoral;
+  }
+}
 
+/* 992px+ (3 columns, background: blue) */
+@media screen and (min-width: 992px) {
+  body {
+    border: 5px dashed yellow;
+  }
 
-/* TODO 992px+ (3 columns, background: blue) */
+  main > div {
+    width: 32%;
+    background-color: cornflowerblue;
+  }
+}
